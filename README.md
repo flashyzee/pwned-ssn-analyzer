@@ -1,36 +1,53 @@
-# pwned-ssn-analyzer
-Automated breach analysis tool that scrapes exposed employee data from a public source, evaluates SSN exposure risk via API, and generates structured CSV reports. Includes automated alert files for high-risk individuals and summary metrics to support incident response and risk assessment.
-
-
-# 🛡️ Breach Exposure Analyzer (CIT 30900 Final Project)
+# 🛡️ Breach Exposure Analyzer  
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Security](https://img.shields.io/badge/Security-Risk%20Analysis-red)
+![Status](https://img.shields.io/badge/Status-Completed-green.svg)
+![Security](https://img.shields.io/badge/Security-Risk%20Analysis-red.svg)
 
 ---
 
-## 🚨 Overview
+## 📌 Project Overview
 
-Automated breach analysis tool that scrapes exposed employee data from a public source, evaluates Social Security Number (SSN) exposure risk via an external API, and generates structured risk reports.
+The **Breach Exposure Analyzer** is an automated security analysis tool that simulates real-world incident response workflows. It scrapes exposed employee data from a public source, evaluates Social Security Number (SSN) exposure risk using an external API, and generates structured outputs for reporting and mitigation.
 
-It also produces automated alert files for high-risk individuals and summarizes exposure metrics to support incident response and security assessment workflows.
+The system produces:
+- A structured CSV risk report
+- Automated alert emails for high-risk individuals
+- Summary statistics for incident analysis
 
 ---
 
-## ⚙️ System Workflow
+## ⚙️ How It Works
 
 ```text
-🌐 Scrape exposed employee data
+🌐 Scrape exposed employee data from target website
         ↓
-🧾 Parse and normalize records
+🧾 Parse and structure employee records
         ↓
-🔐 Send SSNs to risk evaluation API
+🔐 Send each SSN to risk evaluation API
         ↓
-📊 Classify risk (LOW / MEDIUM / HIGH)
+📊 Receive risk classification (LOW / MEDIUM / HIGH)
         ↓
-📁 Generate CSV report
+📁 Write results to employee_risk.csv
         ↓
-📧 Create alert emails for HIGH-risk employees
+📧 Generate alert files for HIGH-risk employees
         ↓
-📈 Print summary statistics
+📈 Output risk summary to console
+
+
+### 📁 Project Structure
+final_project/
+│
+├── index.py                      # Main program entry point
+│
+├── data/                         # (Optional) raw or backup datasets
+│
+├── output-data/
+│   ├── employee_risk.csv        # Generated risk report
+│   └── email/                   # High-risk alert messages
+│       ├── john_doe.txt
+│       ├── jane_smith.txt
+│       └── ...
+│
+├── README.md
+└── LICENSE
