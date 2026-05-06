@@ -35,7 +35,7 @@ The system produces:
 📈 Output risk summary to console
 
 
-### 📁 Project Structure
+#📁 Project Structure
 final_project/
 │
 ├── index.py                      # Main program entry point
