@@ -35,7 +35,7 @@ The system produces:
 📈 Output risk summary to console
 
 
-#📁 Project Structure
+📁 Project Structure
 final_project/
 │
 ├── index.py                      # Main program entry point
@@ -51,3 +51,21 @@ final_project/
 │
 ├── README.md
 └── LICENSE
+
+
+## 🚀 How to Run
+
+Follow these steps to execute the project locally.
+---
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/pwned-ssn-analyzer.git
+cd pwned-ssn-analyzer
+
+### 2️⃣ Install dependencies
+Install the required Python packages: pip install requests beautifulsoup4
+
+### 3️⃣ Run the program
+Execute the main script: python index.py
