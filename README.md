@@ -34,6 +34,7 @@ The system produces:
         ↓
 📈 Output risk summary to console
 
+---
 
 📁 Project Structure
 final_project/
