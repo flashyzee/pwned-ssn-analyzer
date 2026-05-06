@@ -40,7 +40,7 @@ final_project/
 │
 ├── index.py                      # Main program entry point
 │
-├── data/                         # (Optional) raw or backup datasets
+├── breach-data/                         # (Optional) raw or backup datasets
 │
 ├── output-data/
 │   ├── employee_risk.csv        # Generated risk report
